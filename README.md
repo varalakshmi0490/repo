@@ -41,7 +41,7 @@ To containerize the Python web server, we'll create a Dockerfile.
 Dockerfile (save it as Dockerfile):
 
 
-Copy code
+ code
 ..........
 FROM python:3.9
 
@@ -56,20 +56,20 @@ CMD [ "python", "app.py" ]
 
 Create a file named requirements.txt in the same directory and add the following line:
 
-Copy code
+ code
 .............
 Flask
 
 Build the Docker image by running the following command in the terminal:
 
 
-Copy code
+ code
 .............
 docker build -t my-web-server .
 Once the build is complete, you can run the Docker container with:
 
 
-Copy code
+ code
 .............
 docker run -p 5000:5000 my-web-server
 You can access the web server in your browser by visiting http://localhost:5000, and you should see the "Hello, world!" message.
@@ -90,7 +90,7 @@ After Docker is installed, you can copy the Docker image you created earlier to 
 
 Finally, run the Docker container on the server using the same command as before:
 
-Copy code
+ code
 ..............
 
 docker run -p 5000:5000 my-web-server
